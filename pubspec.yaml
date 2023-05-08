@@ -1,0 +1,32 @@
+name: tamper_checker
+description: 避免应用程序克隆。
+version: 1.0.0
+homepage:
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+  crclib: ^3.0.0
+  archive: ^3.3.1
+  encrypt: 5.0.1
+  crypto: ^3.0.3
+  convert: ^3.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: cn.xiaomeili.tamper_checker
+        pluginClass: TamperCheckerPlugin
+      ios:
+        pluginClass: TamperCheckerPlugin

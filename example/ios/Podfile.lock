@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - tamper_checker (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - tamper_checker (from `.symlinks/plugins/tamper_checker/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  tamper_checker:
+    :path: ".symlinks/plugins/tamper_checker/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  tamper_checker: dfefd4078a8beba8271b2808fc28c24893cdb33d
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.2

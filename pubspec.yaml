@@ -1,5 +1,5 @@
 name: tamper_checker
-description: 避免应用程序克隆。
+description: Prevent Application Cloning
 version: 1.0.0
 homepage:
 

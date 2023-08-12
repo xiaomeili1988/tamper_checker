@@ -113,13 +113,14 @@ class TamperChecker {
     Map u2 = {'sum': 0};
     final t2 = InputFileStream(v9);
     final t3 = ZipDecoder().decodeBuffer(t2);
-    for (ArchiveFile u8 in t3.files) {
-      if (u1.contains(u8.name)) {
-        final t1 = oo.Crc32().convert(u8.content).toBigInt().toInt();
-        u2['sum'] += t1;
-        u2[u8.name] = t1;
+    for (var el in u1) {
+      final sf = t3.findFile(el);
+      if (sf != null) {
+        u2['sum'] += sf.crc32;
+        u2[el] = sf.crc32;
       }
     }
+    // }
     return u2;
   }
 
